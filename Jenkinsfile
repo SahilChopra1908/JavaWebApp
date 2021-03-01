@@ -5,7 +5,7 @@ node{
   stage('Compiling-Package'){
     bat 'C:\\Users\\SC185401\\Downloads\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\mvn -f FirstWebApp/pom.xml compile'
   }
-  stage('Compile-Package'){
+  stage('Packaging the code'){
     bat 'C:\\Users\\SC185401\\Downloads\\apache-maven-3.6.3-bin\\apache-maven-3.6.3\\bin\\mvn -f FirstWebApp/pom.xml package'
   }
   stage('SonarQube Analysis'){
